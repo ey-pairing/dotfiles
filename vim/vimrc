@@ -120,6 +120,10 @@ nnoremap <A-l> <C-w>l
 nnoremap <A-s> <C-w>s
 nnoremap <A-q> <C-w>q
 
+" vim open files session storage
+nnoremap <F2> :mksession! .vim_session<CR>
+nnoremap <F3> :source .vim_session<CR>
+
 " grep
 map <leader>a :Ack<space>
 map <leader>a* :Ack<space><cword><CR>
