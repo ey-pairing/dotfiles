@@ -24,7 +24,7 @@
   pl = pull --rebase
   ra = rebase --abort
   rc = rebase --continue
-  recent = "for-each-ref --format='%(committerdate:relative) %(refname:short)' --sort=-committerdate refs/heads/ --count 25"
+  recent = "! git for-each-ref --format='%(committerdate:relative)	%(refname:short)	%(objectname:short)' --sort=-committerdate refs/heads/ --count 25 | column -t -s $'\t'"
   ri = rebase -i
   ro = !git fetch origin && git reset --hard origin/master
   s = status -s
